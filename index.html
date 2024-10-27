@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Love-Themed Photo Popup</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Loved+by+the+King&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <button class="love-button" onclick="showPhoto()">
+        💖 Click to see something pretty 💖
+      </button>
+      <p class="info-text">Images I have of you up until now: 42</p>
+      <div id="photoModal" class="modal">
+        <span class="close" onclick="closePhoto()">&times;</span>
+        <div class="modal-content-wrapper">
+          <img
+            class="modal-content"
+            id="popupPhoto"
+            src=""
+            alt="Surprise Photo"
+          />
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
