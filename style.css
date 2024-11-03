@@ -4,11 +4,9 @@
   padding: 0;
 }
 
+/* Reset body background image */
 body {
   font-family: "Loved by the King", cursive;
-  background-image: url("bg.jpg");
-  background-size: cover;
-  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,6 +14,27 @@ body {
   color: #fff;
   overflow: hidden;
 }
+
+/* Style the video background */
+#backgroundVideo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+/* Main container styling */
+.container {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+
+/* Retain the rest of your CSS styles */
 
 .container {
   text-align: center;
@@ -96,6 +115,6 @@ body {
 .info-text {
   margin-top: 20px;
   font-size: 28px;
-  color: #000000;
+  color: #ffffff;
   font-weight: bold;
 }
